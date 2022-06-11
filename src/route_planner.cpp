@@ -70,7 +70,10 @@ void RoutePlanner::AddNeighbors(RouteModel::Node *current_node)
 
 
 RouteModel::Node *RoutePlanner::NextNode() {
-    sort(open_list.begin(), open_list.end());
+    sort(open_list.begin(), open_list.end(), [](auto const& a, auto const& b) {
+        return (a->g_value + a->h_value) > (b->g_value + b->h_value);
+        });
+
     RouteModel::Node* next_node = open_list.back();
 
     open_list.pop_back();
