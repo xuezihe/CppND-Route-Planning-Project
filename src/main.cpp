@@ -77,13 +77,13 @@ int main(int argc, const char **argv)
     float start_x, start_y, end_x, end_y;
     //user cin start point and end point.
     std::cout << "the start x:";
-    getinput(start_x);
+    start_x=getinput(start_x);
     std::cout << "the start y:";
-    getinput(start_y);
+    start_y=getinput(start_y);
     std::cout << "the end x:";
-    getinput(end_x);
+    end_x=getinput(end_x);
     std::cout << "the end y:";
-    getinput(end_y);
+    end_y=getinput(end_y);
 
     
 
