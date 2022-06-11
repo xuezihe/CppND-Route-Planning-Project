@@ -33,13 +33,13 @@ float getinput(float num)
 {
     cin >> num;
     cout << "\n";
-    if (num>0 &&num<100)
+    if (num>0 &&num<=100)
     {
         return num;
     }
     else
     {
-        cout << "position does not on the canvas(range 0-100).try again";
+        cout << "position does not on the canvas(range 0-100).try again \n";
         getinput(num);
     }
 
