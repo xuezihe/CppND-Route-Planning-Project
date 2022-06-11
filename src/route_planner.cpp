@@ -122,7 +122,6 @@ void RoutePlanner::AStarSearch() {
     RouteModel::Node *current_node = nullptr;
 
     // TODO: Implement your solution here.
-    start_node->g_value = 0;
     open_list.push_back(start_node);
     start_node->visited = true;
     while(!open_list.empty())
