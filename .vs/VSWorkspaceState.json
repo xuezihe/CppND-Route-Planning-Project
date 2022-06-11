@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src"
   ],
+  "SelectedNode": "\\src\\route_planner.cpp",
   "PreviewInSolutionExplorer": false
 }
